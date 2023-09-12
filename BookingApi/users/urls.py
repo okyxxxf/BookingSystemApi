@@ -4,5 +4,5 @@ from users import views
 
 urlpatterns = [
     path('', views.users_list),
-    #path('<int:pk>', views.)
+    path('<int:pk>', views.user_details)
 ]
