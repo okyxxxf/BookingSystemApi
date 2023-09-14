@@ -3,4 +3,5 @@ from concerts import views
 
 
 urlpatterns = [
+    path('', views.concerts_list),
 ]
