@@ -29,7 +29,7 @@ def concerts_list(request):
                     result.append(temp)        
             
 
-        return Response(result)
+        return Response(result, status=status.HTTP_200_OK)
 
 
     if request.method == 'POST':
