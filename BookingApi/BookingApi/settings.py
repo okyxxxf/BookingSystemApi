@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users',
     'concerts',
     'promocodes',
+    'transactions',
 ]
 
 MIDDLEWARE = [
