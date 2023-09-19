@@ -5,6 +5,8 @@ class Concert (models.Model):
     tickets_count = models.IntegerField()
     date = models.DateField()
     place = models.CharField(max_length=256)
+    price = models.FloatField()
+    name = models.CharField(max_length=60)
     CONCERT_TYPE_CHOICES = [
         ('CM', 'Classical Music'),
         ('OA', 'Open Air'), 
