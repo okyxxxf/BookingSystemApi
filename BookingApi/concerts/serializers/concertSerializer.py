@@ -10,5 +10,8 @@ class ConcertSerializer (serializers.ModelSerializer):
             'tickets_count', 
             'date', 
             'place', 
-            'concert_type'
+            'concert_type',
+            'name',
+            'description',
+            'image'
         ]
