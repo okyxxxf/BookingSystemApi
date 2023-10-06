@@ -13,5 +13,6 @@ class ConcertSerializer (serializers.ModelSerializer):
             'concert_type',
             'name',
             'description',
-            'image'
+            'image',
+            'price',
         ]
