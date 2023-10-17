@@ -1,7 +1,7 @@
 from django.db import models
-from users.models import User
-from concerts.models import Concert
 from promocodes.models import Promocode
+from concerts.models import Concert
+from users.models import User
 
 # Create your models here. no!
 
