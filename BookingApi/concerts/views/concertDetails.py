@@ -1,6 +1,6 @@
 from rest_framework.decorators import api_view
-from concerts.serializers import ConcertSerializer, ClassicMusicSerializer, OpenAirSerializer, PartySerializer
-from concerts.models import Concert, ClassicMusic, OpenAir, Party
+from concerts.serializers import ConcertSerializer
+from concerts.models import Concert
 from rest_framework.response import Response
 from rest_framework import status
 from django.db import transaction

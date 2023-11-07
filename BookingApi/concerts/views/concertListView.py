@@ -1,12 +1,14 @@
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
 from concerts.serializers import ConcertSerializer, ClassicMusicSerializer, OpenAirSerializer, PartySerializer
 from concerts.models import Concert, ClassicMusic, OpenAir, Party
 from rest_framework.response import Response
 from .getConcert import get_concert
 from rest_framework import status
 from .createConcert import create_concert
+from rest_framework.permissions import AllowAny
 
 @api_view(['GET', 'POST'])
+@permission_classes([AllowAny])
 def concerts_list(request):
     concerts = Concert.objects.all()
     result = []
