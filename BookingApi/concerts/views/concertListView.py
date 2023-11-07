@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from .getConcert import get_concert
 from rest_framework import status
 from .createConcert import create_concert
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny 
 
 @api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
