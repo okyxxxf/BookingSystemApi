@@ -1,9 +1,7 @@
 from concerts.models import Concert, ClassicMusic, OpenAir, Party
 from concerts.serializers import ClassicMusicSerializer, OpenAirSerializer, PartySerializer
 
-def check_concert_type(
-    concert : Concert
-):
+def check_concert_type ( concert : Concert ):
     match concert.concert_type:
         case 'CM':
             return ClassicMusic
@@ -13,9 +11,7 @@ def check_concert_type(
             return Party
         
 
-def check_concert_type_serializer(
-        concert : Concert
-):
+def check_concert_type_serializer ( concert : Concert ):
     match concert.concert_type:
         case 'CM':
             return ClassicMusicSerializer
