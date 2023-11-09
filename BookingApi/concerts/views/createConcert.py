@@ -14,7 +14,7 @@ def create_concert (
             concert_serializer.save()
             id = concert_serializer.data['id']
         else:
-            return Response(status=status.HTTP_400_BAD_REQUEST)
+            return Response(concert_serializer.errors,status=status.HTTP_401_UNAUTHORIZED)
                     
         request.data[1]['concert_id'] = id
         serializer = model_serializer(data=request.data[1])
