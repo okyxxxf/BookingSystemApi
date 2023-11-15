@@ -8,7 +8,7 @@ class Concert (models.Model):
     price = models.FloatField()
     name = models.CharField(max_length=60)
     description = models.TextField(default='Описание концерта')
-    image = models.TextField(default='default.jpg')
+    image = models.TextField()
     CONCERT_TYPE_CHOICES = [
         ('CM', 'Classical Music'),
         ('OA', 'Open Air'), 
