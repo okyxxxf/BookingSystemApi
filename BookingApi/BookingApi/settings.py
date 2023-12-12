@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-t#+klg+19nn94pnz&p51r0gkmg6y=6df3)ab4pv4+zbzecu%04
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+  '127.0.0.1',
+]
 
 
 # Application definition
@@ -79,9 +81,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'BookingApi.wsgi.application'
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOWED_ORIGINS = [
   'http://localhost:3000',
 ]
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
