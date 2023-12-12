@@ -33,7 +33,9 @@ def transaction_details(request, pk):
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
         case 'DELETE':
+            transaction.concert_id.tickets_count += 1
             transaction.delete()
+
             return Response(status=status.HTTP_202_ACCEPTED)
     
     return Response(status=status.HTTP_400_BAD_REQUEST)
