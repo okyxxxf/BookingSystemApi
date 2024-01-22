@@ -9,9 +9,3 @@ class Concert (models.Model):
     name = models.CharField(max_length=60)
     description = models.TextField(default='Описание концерта')
     image = models.TextField()
-    CONCERT_TYPE_CHOICES = [
-        ('CM', 'Classical Music'),
-        ('OA', 'Open Air'), 
-        ('P', 'Party')
-    ]
-    concert_type = models.CharField(max_length=2, choices=CONCERT_TYPE_CHOICES)

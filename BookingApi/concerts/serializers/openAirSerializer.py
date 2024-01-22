@@ -5,8 +5,8 @@ class OpenAirSerializer (serializers.ModelSerializer):
     class Meta:
         model = OpenAir
         fields = [
-            'id',
-            'concert_id',
             'directions',
             'headliner',
+            'concert_ptr',
         ]
+        depth = 1

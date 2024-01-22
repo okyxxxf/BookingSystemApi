@@ -5,7 +5,7 @@ class PartySerializer (serializers.ModelSerializer):
     class Meta:
         model = Party
         fields = [
-            'id',
-            'concert_id',
             'age_limit',
+            'concert_ptr',
         ]
+        depth = 1
