@@ -5,9 +5,8 @@ class ClassicMusicSerializer (serializers.ModelSerializer):
     class Meta:
         model = ClassicMusic
         fields = [
-            'id', 
-            'concert_id', 
             'voice_type', 
-            'name', 
-            'composer'
+            'composer',
+            'concert_ptr',
         ]
+        depth = 1
